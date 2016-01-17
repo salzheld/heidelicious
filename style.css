@@ -1,0 +1,202 @@
+/*
+THEME NAME: heidelicious
+VERSION: 1.0
+THEME URI: http://loenssschule.de
+DESCRIPTION: modern child theme based on twentytwelve
+AUTHOR: Joern Kretzschmar
+AUTHOR URI: http://diekretzschmars.de/
+TEMPLATE: twentytwelve
+*/
+
+@import url('../twentytwelve/style.css');
+
+.site-title {
+    padding-left: 290px;
+    height: 110px;
+}
+
+.login-link {
+        float: right;
+}    
+
+.nav-menu {
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 40%, #e3e9ff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(40%,#f6f6f6), color-stop(100%,#e3e9ff));
+    background: -webkit-linear-gradient(top, #fffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+    padding-left: 10px;
+}
+
+/* Style Widgets */
+body .calendar-container .view-cap, body .calendar-container .view-container-border {
+    background-color: white!important;}
+    
+#page #secondary {
+    padding: 24px 5px;
+    padding: 1.714285714rem 0.357142857rem;
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 40%, #e3e9ff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(40%,#f6f6f6), color-stop(100%,#e3e9ff));
+    background: -webkit-linear-gradient(top, #e3e9ff 0%,#f6f6f6 40%,#ffffff 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 40%,#e3e9ff 100%);
+}
+
+.widget-area-title {
+    margin-bottom: 24px;
+    margin-bottom: 1.714285714rem;    
+}
+
+.widget-area .widget {
+    margin-bottom: 24px;
+    margin-bottom: 1.714285714rem;
+}
+
+.spalten li,
+.bookmarks li,
+.downloads li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.spalten li li,
+.bookmarks li li,
+.downloads li li {
+    margin: 8px 0 0;
+    margin: 0.571428571rem 0 0;
+    font-size: 13px;
+    font-size: 0.928571429rem;
+    line-height: 1.714285714;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.spalten h2,
+.bookmarks h2,
+.downloads h2 {
+	font-size: 12px;
+	font-size: 0.857142857rem;
+    line-height: 2;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #636363;
+}
+
+/* Start Page Template */
+.template-start-page h2 {
+    margin-bottom: 24px;
+    margin-bottom: 1.714285714rem;
+}
+
+.template-start-page #tertiary {
+    clear: both;
+    float: none;
+    width: auto;
+    padding-top: 24px;
+    padding-top: 1.714285714rem;
+    border-top: 1px solid #ededed;
+}
+.template-start-page .widget li {
+    margin: 8px 0 0;
+    margin: 0.571428571rem 0 0;
+    font-size: 13px;
+    font-size: 0.928571429rem;
+    line-height: 1.714285714;
+    list-style-type: square;
+    list-style-position: inside;
+}
+.template-start-page .widget-area .widget li a {
+    color: #757575;
+}
+.template-start-page .widget-area .widget li a:hover {
+    color: #21759b;
+}
+.template-start-page .widget-area .widget_text img {
+    float: left;
+    margin: 8px 24px 8px 0;
+    margin: 0.571428571rem 1.714285714rem 0.571428571rem 0;
+}
+
+.template-start-page .site-content article {
+    margin-bottom: 24px;
+    margin-bottom: 1.714285714rem;
+}
+
+.slide { margin: 0 auto 24px; margin: 0 auto 1.714285714rem; overflow: hidden; position: relative; width: 180px; height: 190px; }
+.slide img { position: absolute; left:0; top:0; }
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 600px) {
+    .main-navigation li ul li a {
+        background: #e3e9ff;
+        background: rgba(227, 233, 255, 0.9);
+    }
+    .main-navigation li ul li a:hover {
+        background: #e3e3e3;
+        color: #444;
+    }
+
+    .template-start-page .site-content,
+    .template-start-page article {
+        overflow: hidden;
+    }
+    .template-start-page.has-post-thumbnail article {
+        float: left;
+        width: 47.916666667%;
+    }
+    .template-start-page .widget-area .second {
+        float: left;
+        width: 51.875%;
+        margin-bottom: 24px;
+        margin-bottom: 1.714285714rem;
+    }
+    .template-start-page .widget-area .third {
+        float: right;
+        width: 39.0625%;
+        margin: 0 0 24px;
+        margin: 0 0 1.714285714rem;
+    }
+    
+    .spalten .linkcat,
+    .bookmarks .linkcat, 
+    .downloads .linkcat {
+        float: left;
+        width: 45%;
+        margin-bottom: 24px;
+        margin-bottom: 1.714285714rem;
+    }
+
+    .spalten .linkcat:nth-child(odd),
+    .bookmarks .linkcat:nth-child(odd),
+    .downloads .linkcat:nth-child(odd) {
+        clear: left;
+    }
+    
+    .spalten .linkcat:nth-child(even),
+    .bookmarks .linkcat:nth-child(even),
+    .downloads .linkcat:nth-child(even) {
+        float: right;
+        width: 45%;
+        margin: 0 0 24px;
+        margin: 0 0 1.714285714rem;
+    }
+
+    .spalten,
+    .bookmarks,
+    .downloads {
+        overflow: hidden;
+        clear: both;
+    }    
+}
+
+.entry-content table, .comment-content table {
+	color: black;
+}
